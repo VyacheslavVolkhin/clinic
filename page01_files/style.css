@@ -1,0 +1,521 @@
+ol, ul {
+    list-style: none;
+}
+.text-page > * + :not(br) {
+    margin-top: 30px;
+}
+.text-page li, .text-page p {
+    line-height: 1.2;
+    position: relative;
+    width: 100%;
+}
+.text-page h2 {
+    font-size: 30px;
+}
+.text-page h1, .text-page h2, .text-page h3, .text-page h4, .text-page h5, .text-page h6 {
+    font-family: charter-bold;
+    line-height: 1.2;
+    letter-spacing: .5px;
+}
+.text-page b, .text-page strong {
+    font-family: charter-bold;
+}
+.text-page em, .text-page i {
+    font-style: italic;
+}
+.text-page > ul > li::before, .text-page ol > li::before {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+.text-page ul li::before {
+    background: #0094d2;
+    content: "";
+    height: 8px;
+    width: 8px;
+    top: 5px;
+    left: 0;
+}
+.clinic-form {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 27px 30px;
+    overflow: hidden;
+}
+.clinic-form {
+    max-width: 1110px;
+    position: relative;
+}
+.clinic-form__part.left-part {
+    color: #063871;
+    width: 63%;
+    padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.clinic-form__part-img {
+    position: absolute;
+    top: 0;
+    left: 28%;
+}
+.left-part-col {
+    font-size: 20px;
+    max-width: 32ch;
+}
+.clinic-form__part-slogan {
+    position: relative;
+}
+.banner-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-family: "CharterITC" !important;
+    color: #A80D0F;
+    font-weight: bold;
+    font-size: 2em !important;
+    line-height: 1 !important;
+}
+.banner-title__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #446489;
+    font-weight: 700;
+    line-height: 1.15 !important;
+    font-family: "CharterITC";
+}
+.banner-title__price-block {
+    margin: 13px 0px 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.banner-title__price {
+    font-family: Bebas Neue;
+    display: table-cell;
+    font-weight: 700;
+    font-size: 2em;
+    background: -o-linear-gradient(278.86deg, #0C82CD 4.88%, #7CE3FF 74.27%, #0094E1 106.52%);
+    background: linear-gradient(171.14deg, #0C82CD 4.88%, #7CE3FF 74.27%, #0094E1 106.52%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+.banner-title__action {
+    width: 430px;
+    position: relative;
+    padding: 15px;
+    left: -30px;
+    background-color: rgba(231, 240, 249, 0.5);
+}
+.banner-title__action-text {
+    width: 78%;
+    font-family: "Gotham Pro";
+    color: #333333;
+    font-size: 0.8em;
+    line-height: 1.3 !important;
+}
+.banner-title__action-text .fz-20 {
+    font-size: 1.2em;
+    color: #446489;
+	font-weight: 600;
+}
+.banner-form {
+    padding: 25px 8px 30px;
+    width: 36%;
+    background: #FFFFFF;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-image: none;
+        background-size: auto;
+    -webkit-box-shadow: 0px 7px 30px rgba(134, 204, 255, 0.5);
+    box-shadow: 0px 7px 30px rgba(134, 204, 255, 0.5);
+    border-radius: 25px;
+    background-image: url('/dist/img/banner-form-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+.clinic-form__part-slogan-text {
+padding-top: .5em;
+max-width: 15ch;
+font-size: 40px;
+line-height: 1 !important;
+font-weight: normal;
+text-align: right;
+letter-spacing: 0.44px;
+text-transform: uppercase;
+color: #C42225;
+font-stretch: condensed;
+font-family: Arial;
+}
+.banner-form-title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px !important;
+    color: #446489;
+}
+.banner-form-subtitle {
+    font-size: 20px;
+    color: #000;
+}
+.banner-form-head {
+    font-family: CharterITC;
+    font-style: normal;
+    text-align: center;
+}
+.banner-contact-form {
+    width: 60%;
+    max-width: 300px;
+    min-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-page a:not(.method-banner__social--item):not(.method-banner__link):not(.main-btn):not(.text-banner__form--top-link) {
+    border-bottom: 1px solid #2bafe6;
+    color: #2bafe6;
+    transition: all .25s ease-in-out;
+}
+.banner-form-phone {
+    text-decoration: none;
+    font-size: 32px;
+    font-family: CharterITC;
+    font-style: normal;
+    font-weight: bold;
+    display: table;
+    margin: 10px auto 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background: -o-linear-gradient(271.66deg, #0C82CD 4.88%, #7CE3FF 74.27%, #0094E1 106.52%);
+    background: linear-gradient(178.34deg, #0C82CD 4.88%, #7CE3FF 74.27%, #0094E1 106.52%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    border-bottom: none !important;
+}
+.banner-form-input {
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Gotham Pro';
+    border-radius: 15px;
+    border: 1px solid #2bafe6;
+    color: #446489;
+    margin-bottom: 10px;
+    outline: none;
+}
+.banner-form-button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #9bd9f4;
+    border-radius: 30px;
+    max-width: 168px;
+    padding: 3px;
+}
+.banner-form-button {
+    border-radius: 28px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    max-width: 120px;
+    min-width: 162px;
+    height: 40px;
+    padding: 4px;
+    border: 0px;
+    background-color: #2bafe6;
+    -webkit-box-shadow: 0 10px 15px rgba(30, 158, 212, 0.3);
+    box-shadow: 0 10px 15px rgba(30, 158, 212, 0.3);
+    color: #fff;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    outline: none;
+}
+.clinics__inner {
+    margin: 0 -15px;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.clinics__item {
+    width: 33.333%;
+    padding: 30px 15px 0;
+}
+.clinics__item--inner {
+    width: 100%;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 0;
+}
+.clinics__image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 270px;
+}
+.clinics__title--box {
+    background: #fff;
+    box-shadow: 0 10px 55px rgba(30, 158, 212, .2);
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 15px 10px;
+    position: absolute;
+    z-index: 1;
+}
+.clinics__title {
+    color: #446489;
+    font-size: 17px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.lp-map__inner {
+    border-radius: 15px;
+    box-shadow: 0 20px 70px hsla(0, 0%, 79%, .84);
+    overflow: hidden;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.lp-map__text {
+    background: #2bafe6;
+    color: #fff;
+    padding: 30px;
+}
+.lp-map__inner > * {
+    width: 50%;
+}
+.text-page a:not(.method-banner__social--item):not(.method-banner__link):not(.main-btn):not(.text-banner__form--top-link) {
+    border-bottom: 1px solid #2bafe6;
+    color: #2bafe6;
+    transition: all .25s ease-in-out;
+}
+.shema-pick{
+    background-color: #fff !important;
+    background-image: url(/images/map-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.docs__box--item {
+    width: 100%;
+    margin-top: 10px;
+}
+.docs__box--link {
+    border: 0 !important;
+    color: #2bafe6;
+    font-family: gotham-pro-medium;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+	text-decoration: none;
+}
+.docs__box--link > * {
+    position: relative;
+}
+.docs__box--text {
+    width: 100%;
+    margin-left: -40px;
+    padding-left: 60px;
+    z-index: 1;
+	text-decoration: none;
+	font-size: 18px;
+}
+.docs__box--icon {
+    border-radius: 0 !important;
+    width: 40px;
+    z-index: 2;
+}
+
+.news-widget__title--box {
+    margin-top: 5px;
+}
+.news-widget__title {
+    color: #446489;
+    font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.news-widget__author {
+    color: #2bafe6;	
+    font-size: 18px;
+	font-weight: 700;
+    margin-top: 5px;
+}
+.news-widget__author--link {
+    color: #2bafe6;
+	text-decoration: none;
+}
+.news-widget__author--link:hover {
+    color: #e51c20;
+}
+.news-widget__description {
+    margin-top: 15px;
+}
+.pt-100, .pv-100 {
+    padding-top: 100px;
+}
+.pv-100 {
+    padding-bottom: 100px;
+}
+.reviews__filter {
+    margin: 0 -15px;
+    padding-right: 185px;
+    position: relative;
+    z-index: 2;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.reviews__filter.v2 {
+    padding-right: 0;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+	margin-bottom: 40px;
+}
+.reviews__filter--button {
+    width: 170px;
+}
+.doctor-zapis__button2.main-btn {
+    max-width: 100%;
+    width: 200px;
+}
+.doctor-zapis__button2.main-btn a{
+   text-decoration: none;
+}
+.news-and-info__inner {
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 0 -15px;
+}
+.lp-bottom .news-widget {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+}
+.news-widget__item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(30, 158, 212, .2);
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px;
+}
+.lp-bottom .news-widget__item {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.news-widget__item--inner {
+    border: 1px solid #e1ecf1;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 25px;
+}
+.news-widget__text {
+    width: 100%;
+    z-index: 1;
+}
+.news-widget__item--inner > * {
+    position: relative;
+}
+.news-widget__date {
+    font-size: 12px;
+}
+.news-widget__title--box {
+    margin-top: 5px;
+}
+.news-widget__description {
+    margin-top: 15px;
+}
+.news-widget__image {
+    background-size: cover;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+.video__inner {
+    margin: 0 -15px;
+}
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.video__inner {
+    margin: 0 -15px
+}
+.video__item {
+    width: 33.333%;
+    margin-top: 40px;
+    padding: 0 15px
+}
+.video__iframe {
+    width: 100%;
+    height: 200px
+}
+.video__title {
+    color: #446489;
+    font-size: 17px;
+	font-weight: 700;
+}
+.video__title--box {
+    margin-top: 10px
+}
+.video__title:hover {
+    color: #e51c20 !important
+}
+@media (max-width: 960px) {
+	.clinics__item {
+		width: 50%;
+	}
+}
+@media (max-width: 540px) {
+	.clinics__item {
+		width: 100%;
+	}
+}
+
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.banner-form-input.input-error {border: 1px solid red;}
